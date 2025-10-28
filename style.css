@@ -1,35 +1,131 @@
-body {
-    background-color: aquamarine;
-    font-family: Tahoma, Verdana, sans-serif;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-h1 {
-    color: orangered;
-    font-family: Arial, Helvetica, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
+
+.oswald-500 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-    color: darkgreen;
+.oswald-600 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
- 
-section:nth-child(1) {
+
+.oswald-700 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+a.hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+    position: relative;
+    border-bottom: 2px solid red;
+}
+
+#desktop-section{
     display: none;
 }
 
-@media (min-width: 768px) {
+nav {
+    opacity: 0;
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+}
+
+header button {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+
+nav ul li {
+    border: 1px solid white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+nav ul li a:active {
+    background-color: #e01c1c;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px)  and (max-width: 900px) {
     section {
         display: inline-block;
         width: 45%;
     }
-
-    #desktop-section {
-        display: inline-block;
-    }
 }
 
+/* Desktop */
+@media screen and (min-width: 930px) {
+
+    section {
+        display: inline-block;
+        width: 30%;
+    }
+
+    #desktop-section{
+        display: inline-block;
+    }
+
+    header button {
+        display: none;
+    }
+
+    nav ul { 
+        opacity: 1;
+        display: block;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+}
