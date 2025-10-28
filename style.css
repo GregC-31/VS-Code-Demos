@@ -109,6 +109,8 @@ nav ul li a:active {
     nav {
         display: block;
         opacity: 1;
+        position: relative;
+        text-align: left;
     }
     
     section {
