@@ -24,4 +24,11 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
     // Collect form data using a query selector
     const firstName = document.querySelector("#fname").value;
+    const lastName = document.querySelector("#lname").value;
+
+    // Submit form to console
+    console.log(`Form submitted: ${firstName} ${lastName}`);
+
+    // Reset the form
+    document.getElementById("contactForm").reset();
 });
