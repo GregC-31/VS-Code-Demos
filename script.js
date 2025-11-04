@@ -18,4 +18,4 @@ function toggleMenu(evt) {
     }
 }
 
-document.getElementById("contactForm").addEventListener;("submit", function(event) {});
+document.getElementById("contactForm").addEventListener("submit", function(event) {});
