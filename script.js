@@ -21,4 +21,7 @@ function toggleMenu(evt) {
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     // Prevent default form submission
     event.preventDefault();
+
+    // Collect form data using a query selector
+    const firstName = document.querySelector("#fname").value;
 });
