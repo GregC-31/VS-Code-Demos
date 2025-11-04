@@ -1,5 +1,6 @@
 function toggleMenu(evt) {
     console.log('evt', evt);
+    
     // Toggle nav-list
     let nav = document.querySelector("#nav-list");
 
@@ -16,3 +17,5 @@ function toggleMenu(evt) {
         nav.style.opacity = 1;
     }
 }
+
+document.getElementById("contactForm").addEventListener;("submit", function(event) {});
