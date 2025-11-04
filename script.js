@@ -18,4 +18,7 @@ function toggleMenu(evt) {
     }
 }
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {});
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    // Prevent default form submission
+    event.preventDefault();
+});
