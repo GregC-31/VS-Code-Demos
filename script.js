@@ -18,7 +18,8 @@ function toggleMenu(evt) {
     }
 }
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
+document.addEventListener("DOMContentLoaded", function()) {
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
     // Prevent default form submission
     event.preventDefault();
 
@@ -31,4 +32,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
     // Reset the form
     document.getElementById("contactForm").reset();
-});
+  }
+};
+
