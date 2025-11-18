@@ -69,9 +69,13 @@ document.addEventListener("DOMContentLoaded", function()) {
             );
 
             const recipient = 'gncripps@batestech.edu';
+            const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
 
-        // Reset the form
-        contactForm.reset();
+            // Open the mailto link
+            window.location.href = mailtoLink;
+
+            // Reset the form
+            contactForm.reset();
   }
 };
 
