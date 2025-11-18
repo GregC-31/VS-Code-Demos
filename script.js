@@ -34,8 +34,9 @@ document.addEventListener("DOMContentLoaded", function()) {
     const lastName = document.querySelector("#lname").value;
     const email = document.querySelector("#email").value;
     const message = document.querySelector("#message").value;
+    const phone = document.querySelector("#phone").value;
 
-    
+
     // Submit form to console
     console.log(`Form submitted: ${firstName} ${lastName}`);
 
