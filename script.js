@@ -37,10 +37,14 @@ document.addEventListener("DOMContentLoaded", function()) {
             const phone = document.querySelector("#phone").value;
             const errorMsg = document.querySelector(".error");
             console.log(errorMsg);
-
-            // regex to validate an email address
             const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,})$/;
 
+            // validate required fields
+            if (firstName === "" && lastName === "" && email !== "" && message === "") {
+                errorMsg.innerText = "Please enter required fields.";
+                return;
+            }
+            
             // validate email format
             if (!emailRegex.test(email)) {
 
