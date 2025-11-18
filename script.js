@@ -60,9 +60,6 @@ document.addEventListener("DOMContentLoaded", function()) {
             // submit form
             errorMsg.innerText = ""; // clear any previous error messages
 
-        // log form data to console
-        console.log(`Form submitted: ${firstName} ${lastName}`);
-
         // Reset the form
         contactForm.reset();
   }
