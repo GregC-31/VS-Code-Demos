@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function()) {
             
             // validate email format
             if (!emailRegex.test(email)) {
-
                 return;
             }
 
@@ -59,6 +58,10 @@ document.addEventListener("DOMContentLoaded", function()) {
             
             // submit form
             errorMsg.innerText = ""; // clear any previous error messages
+
+            // Build the mailto form
+            const subject = encodeURIComponent(`Contact form submission from ${firstName} ${lastName}`);
+
 
         // Reset the form
         contactForm.reset();
