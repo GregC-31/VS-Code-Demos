@@ -32,7 +32,10 @@ document.addEventListener("DOMContentLoaded", function()) {
     // Collect form data using a query selector
     const firstName = document.querySelector("#fname").value;
     const lastName = document.querySelector("#lname").value;
+    const email = document.querySelector("#email").value;
+    const message = document.querySelector("#message").value;
 
+    
     // Submit form to console
     console.log(`Form submitted: ${firstName} ${lastName}`);
 
