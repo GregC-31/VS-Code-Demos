@@ -19,9 +19,15 @@ function toggleMenu(evt) {
 }
 
 document.addEventListener("DOMContentLoaded", function()) {
-  document.getElementById("contactForm").addEventListener("submit", function(event) {
-    // Prevent default form submission
-    event.preventDefault();
+
+    var contactForm = document.getElementById("contactForm");
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", function(event)) {
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            // Prevent default form submission
+            event.preventDefault();
 
     // Collect form data using a query selector
     const firstName = document.querySelector("#fname").value;
@@ -31,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function()) {
     console.log(`Form submitted: ${firstName} ${lastName}`);
 
     // Reset the form
-    document.getElementById("contactForm").reset();
+    contactForm.reset();
   }
 };
 
