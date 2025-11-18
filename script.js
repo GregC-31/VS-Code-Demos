@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function()) {
                 `Message:\n${message}`
             );
 
-            const recipients = 'gncripps@batestech.edu';
+            const recipient = 'gncripps@batestech.edu';
 
         // Reset the form
         contactForm.reset();
