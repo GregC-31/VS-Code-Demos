@@ -61,7 +61,14 @@ document.addEventListener("DOMContentLoaded", function()) {
 
             // Build the mailto form
             const subject = encodeURIComponent(`Contact form submission from ${firstName} ${lastName}`);
+            const body = encodeURIComponent(
+                `Name: ${firstName} ${lastName}\n` +
+                `Email: ${email} \n` +
+                `Phone: ${phone} \r\n` +
+                `Message:\n${message}`
+            );
 
+            const recipients = 'gncripps@batestech.edu';
 
         // Reset the form
         contactForm.reset();
