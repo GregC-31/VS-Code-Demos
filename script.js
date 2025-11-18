@@ -47,12 +47,15 @@ document.addEventListener("DOMContentLoaded", function()) {
                 return;
             }
 
-            if (firstName !== "" && lastName !== "" && email !== "" && message !== "") {
-                // Submit form
+            // validate required fields
+            if (firstName === "" && lastName === "" && email !== "" && message === "") {
+                errorMsg.innerText = "Please enter required fields.";
+                return;
             }
+            
+            // submit form
 
-
-        // Submit form to console
+        // log form data to console
         console.log(`Form submitted: ${firstName} ${lastName}`);
 
         // Reset the form
