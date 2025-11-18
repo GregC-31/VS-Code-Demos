@@ -47,6 +47,10 @@ document.addEventListener("DOMContentLoaded", function()) {
                 return;
             }
 
+            if (firstName !== "" && lastName !== "" && email !== "" && message !== "") {
+                // Submit form
+            }
+
 
         // Submit form to console
         console.log(`Form submitted: ${firstName} ${lastName}`);
