@@ -29,30 +29,30 @@ document.addEventListener("DOMContentLoaded", function()) {
             // Prevent default form submission
             event.preventDefault();
 
-        // Collect form data using a query selector
-        const firstName = document.querySelector("#fname").value;
-        const lastName = document.querySelector("#lname").value;
-        const email = document.querySelector("#email").value;
-        const message = document.querySelector("#message").value;
-        const phone = document.querySelector("#phone").value;
-        const errorMsg = document.querySelector(".error");
-        console.log(errorMsg);
+            // Collect form data using a query selector
+            const firstName = document.querySelector("#fname").value;
+            const lastName = document.querySelector("#lname").value;
+            const email = document.querySelector("#email").value;
+            const message = document.querySelector("#message").value;
+            const phone = document.querySelector("#phone").value;
+            const errorMsg = document.querySelector(".error");
+            console.log(errorMsg);
 
-        // regex to validate an email address
-        const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,})$/;
+            // regex to validate an email address
+            const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,})$/;
 
-        // validate email format
-        if (!emailRegex.test(email)) {
+            // validate email format
+            if (!emailRegex.test(email)) {
 
-            return;
-        }
+                return;
+            }
 
 
-    // Submit form to console
-    console.log(`Form submitted: ${firstName} ${lastName}`);
+        // Submit form to console
+        console.log(`Form submitted: ${firstName} ${lastName}`);
 
-    // Reset the form
-    contactForm.reset();
+        // Reset the form
+        contactForm.reset();
   }
 };
 
