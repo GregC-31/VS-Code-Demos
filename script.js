@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function()) {
     const message = document.querySelector("#message").value;
     const phone = document.querySelector("#phone").value;
 
+    const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,})$/;
+
 
     // Submit form to console
     console.log(`Form submitted: ${firstName} ${lastName}`);
