@@ -3,8 +3,9 @@
 
 <head>
 
-<title>A Quick Biography of Gregory Cripps</title>
-
+    <title>A Quick Biography of Gregory Cripps</title>
+    <link rel="stylesheet" type="text/css" href="portfolio_styles.css">
+    
 </head>
 
 </html> 
