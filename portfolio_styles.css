@@ -1,8 +1,4 @@
-body {
-    background-color: rgb(247, 249, 248);
+body .homepage #background{
+    background-color: aliceblue;
 }
 
-title {
-    text-align: justify;
-    color: darkblue;
-}
