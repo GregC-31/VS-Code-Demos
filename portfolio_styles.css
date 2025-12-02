@@ -2,7 +2,7 @@ body .homepage #background{
     background-color: aliceblue;
 }
 
-h1 .homepage {
-    color: brown;
+h1 {
+    color: blueviolet;
     font-family: "Times", "Times New Roman", serif;
 }
