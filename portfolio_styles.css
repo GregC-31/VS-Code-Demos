@@ -21,3 +21,13 @@ h4 {
     color: brown;
     font-family: "Times", "Times New Roman", serif;
 }
+
+p {
+    color: darkgreen;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+a {
+    color: darkmagenta;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
