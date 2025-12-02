@@ -31,3 +31,13 @@ a {
     color: darkmagenta;
     font-family: "Helvetica", "Arial", sans-serif;
 }
+
+a:hover {
+    color: orangered;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+a:active {
+    color: turquoise;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
